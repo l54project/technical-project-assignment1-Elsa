@@ -2,7 +2,7 @@
   --darkGray: #2d3748;
   --gray: #4a5568;
   --grayLight: #f7fafc;
-  --primary: #1300c2;
+  --primary: #ff8800;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-  background: #1300c2;
+  background: #ff8800;
   height: 85px;
   display: flex;
   padding: 0 10%;
@@ -31,6 +31,7 @@ body {
 .nav-menu {
   display: flex;
   gap: 30px;
+  
 }
 
 .hero-container {
@@ -187,11 +188,6 @@ body {
 .what-is-container > img {
   width: 52%;
   background: red;
-}
-
-.what-is-container > div > .footer {
-  display: flex;
-  justify-content: space-between;
 }
 
 .button-container {
