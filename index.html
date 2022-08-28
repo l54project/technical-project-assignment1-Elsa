@@ -1,121 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ELSA | BLOG</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-
+    <title>Elsa | Story Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
-    <nav class="navbar">
-      <h1>STORY ROOM</h1>
-      <div class="nav-menu">
-        <p>HOME</p>
-        <p>ARTICLE</p>
-        <p>CONTACT</p>
-      </div>
-    </nav>
-    <section class="hero-container">
-      <div>
-        <div>
-          <h1>Menambah Wawasan</h1>
-          <p>Yuk NgeBlog!!!</p>
+    <!-- header -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a href="#" class="navbar-brand">STORY ROOM</a>
+          <div class="navbar-nav">
+            <a href="#">home</a>
+            <a href="#">blog</a>
+            <a href="#">about</a>
+            <a href="#">social media</a>
+          </div>
+        </div>
+      </nav>
+      <div class="banner">
+        <div class="container">
+          <h1 class="banner-title"><span>BLOG. </span>Story Room</h1>
+          <p>ingin menambah wawasan? yuk ngeblog di story room</p>
+          <form>
+            <input type="text" class="search-input" placeholder="cari blog . . ." />
+            <button type="submit" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
         </div>
       </div>
-      <img src="assets/hero.svg" alt="hero" />
-    </section>
-    <section class="description-container">
-      <div>
-        <div>
-          <p>Belajar Coding Membuat Otak Kita Jadi Lebih Terasah</p>
-        </div>
-        <div class="description-left-footer">
-          <p>21 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-      <img src="assets/desc.png" alt="desc" />
-    </section>
-    <section class="content-container">
-      <div class="card">
-        <img src="assets/card1.png" alt="card1" />
-        <div class="card-body">
-          <p>Apa Itu Coding? Yuk Simak Penjelasannya...</p>
-        </div>
-        <div class="card-footer">
-          <p>20 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/card2.png" alt="card2" />
-        <div class="card-body">
-          <p>Ngoding Membutuhkan Kerja Sama Yang Baik Untuk Menghasilkan Project Yang Memuaskan...</p>
-        </div>
-        <div class="card-footer">
-          <p>19 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/card3.png" alt="card3" />
-        <div class="card-body">
-          <p>Apakah Jurusan Sistem Informasi Hanya Tentang Coding Saja?....</p>
-        </div>
-        <div class="card-footer">
-          <p>18 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-    </section>
+    </header>
+    <!-- end of header -->
 
-    <section class="content-container">
-      <div class="card">
-        <img src="assets/ref1.jpg" alt="card1" />
-        <div class="card-body">
-          <p>Mengapa Programmer Identik Dengan Kopi???</p>
+    <!-- blog -->
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="title">
+          <h2>Blog Terbaru</h2>
+          <p>yuk jelajahi</p>
         </div>
-        <div class="card-footer">
-          <p>27 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/ref2.jpg" alt="card2" />
-        <div class="card-body">
-          <p>Prospek Karir dan Persiapan Menjadi Seorang Programmer...</p>
-        </div>
-        <div class="card-footer">
-          <p>28 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/ref3.jpg" alt="card3" />
-        <div class="card-body">
-          <p>Apa Itu If Else? Yuk Simak Penjelasannya....</p>
-        </div>
-        <div class="card-footer">
-          <p>29 Agt 2022</p>
-          <p class="font-weight-bold">Selengkapnya...</p>
+        <div class="blog-content">
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/desc.png" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>28 Agustus, 2022</span>
+              <h2>Belajar Coding untuk Pemula - BlogStory</h2>
+              <p>Tak cuma belajar bahasa pemrograman, situs ini juga menyediakan forum diskusi, glossaries bahasa pemograman, serta berbagai blog post dan ...</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/ref2.jpg" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>29 Agustus, 2022</span>
+              <h2>Berkenalan Dengan Pemrograman Web - BlogStory</h2>
+              <p>Apa sih pemrograman web itu? Merupakan salah satu cabang ilmu pemrograman yang dikhususkan untuk membuat dan mendesain sebuah website...</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/coding1.jpg" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>30 Agustus, 2022</span>
+              <h2>8 Cara Belajar Pemrograman Yang Efektif untuk Pemula</h2>
+              <p>Pemrograman adalah penggunaan satu atau lebih algoritma untuk menjadi bahasa pemrograman yang saling berkaitan, di mana pada akhirnya dapat menghasilkan suatu ...</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/card3.png" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>30 Agustus, 2022</span>
+              <h2>Malas Ngoding, 10 Cara untuk Mengatasinya yang Bisa Kamu Coba</h2>
+              <p>Tidak bisa dipungkiri lagi, bahwa rasa malas sering menjangkiti setiap orang. Pasti kita pernah mengalami...</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/card2.png" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>9 September, 2022</span>
+              <h2>8 Tools Kolaborasi Coding untuk Remote Pair Programmer</h2>
+              <p>Dengan berkolaborasi suatu pekerjaan bisa dikerjakan dengan cepat, Salah satunya yaitu Kolaborasi coding bagi para programmer. Para programmer terutama pekerja remote akan menggunakan tools kolaborasi khusus coding....</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class="blog-item">
+            <div class="blog-img">
+              <img src="assets/card1.png" alt="" />
+              <span><i class="far fa-heart"></i></span>
+            </div>
+            <div class="blog-text">
+              <span>10 September, 2022</span>
+              <h2>Apakah Programmer itu Introvert ? - BlogStory</h2>
+              <p>Hallo Sobat Story, kali ini kita akan mengulik salah satu rumor nih yang sering kita denger yaitu Programmer itu introvert beberapa orang mengatakan bahwa kebanyakan programmer itu ansos, introvert, jarang bergaul ...</p>
+              <a href="#">Selengkapnya</a>
+            </div>
+          </div>
+          <!-- end of item -->
         </div>
       </div>
     </section>
+    <!-- end of blog -->
 
-    <section class="button-container">
-      <button class="btn">Lihat Lebih Banyak Lagi...</button>
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div>
+            <img src="assets/galaxy-01.png" alt="" />
+          </div>
+          <div class="about-text">
+            <div class="title">
+              <h2>Blog Story Room</h2>
+              <p>Pemrograman, Tips & Trick</p>
+            </div>
+            <p>
+              Hai Sobat Story, ingin menambah wawasan tentang pemrograman? Yukkk, kepoin isi Blog Story Room Kami, disini kalian semua dapat belajar mengenai "Apasih Itu Pemrograman?", "Tools Apa sih yang Digunakan para Programmer?" dan
+              masih banyak lagi hal yang kalian bisa pelajari di Blog Story Room.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- end of about -->
+
+    <!-- footer -->
     <footer>
-      <p><b>StoryRoom</b> 2022 Copyright</p>
-      <div>
-        <img src="assets/instagram.svg" alt="instagram" />
-        <img src="assets/twitter.svg" alt="twitter" />
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/dessielsa_ed/"><i class="fab fa-instagram"></i></a>
       </div>
+      <span>StoryRoom @2022 </span>
     </footer>
+    <!-- end of footer -->
   </body>
 </html>
